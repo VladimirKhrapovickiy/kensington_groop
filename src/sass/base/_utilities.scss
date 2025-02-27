@@ -37,11 +37,11 @@
 content: "";
 width: 22px;
 height: 16px;
-background-image: url("../../img/icons/mail.svg");
+background-image: url("../img/icons/mail.svg");
 background-size: contain;
 background-repeat: no-repeat;
 transition: 0.3s all ease-in;
 }
 .btn-contact:hover::before{
-    background-image: url("../../img/icons/mail-green.svg");
+    background-image: url("../img/icons/mail-green.svg");
 }
