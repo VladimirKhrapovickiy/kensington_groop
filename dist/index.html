@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kensington-Groop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,14 +30,41 @@
     </header>
     <main>
         <section class="main-screen">
-            <div class="container">
-                <div class="main-screen__slide" style="background-image: url(./img/main-bg-1.webp);">
-                    <div class="main-screen__content">
-                        <h3 class="title-3 main-screen__title">International Real Estate</h3>
-                        <p class="main-screen__text">We specialize in providing top-notch real estate options in highly desirable global destinations, guiding you through various investment programs for residency and citizenship.</p>
-                        <button class="btn btn-gold main-screen__btn">Real Estate Enquiry</button>
+            <div class="container swiper">
+                <div class="swiper-wrapper">
+                    <div class="main-screen__slide swiper-slide" style="background-image: url(./img/main-bg-1.webp);">
+                        <div class="main-screen__content">
+                            <h3 class="title-3 main-screen__title">International Real Estate</h3>
+                            <p class="main-screen__text">We specialize in providing top-notch real estate options in highly desirable global destinations, guiding you through various investment programs for residency and citizenship.</p>
+                            <button class="btn btn-gold main-screen__btn">Real Estate Enquiry</button>
+                        </div>
+                    </div>
+                    <div class="main-screen__slide swiper-slide" style="background-image: url(./img/main-bg-2.webp);">
+                        <div class="main-screen__content">
+                            <h3 class="title-3 main-screen__title">Citizenship Programs</h3>
+                            <p class="main-screen__text">The most credible and successful citizenship options are being sought by affluent individuals, who view them as a gateway to unprecedented opportunities. 
+                            </p>
+                            <button class="btn btn-gold main-screen__btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="main-screen__slide swiper-slide" style="background-image: url(./img/main-bg-3.webp);">
+                        <div class="main-screen__content">
+                            <h3 class="title-3 main-screen__title">RESIDENCE Programs</h3>
+                            <p class="main-screen__text">From advising you on appropriate residence and citizenship by investment program options to ensuring that you secure the very best property that meets your individual needs, our aim is to source exceptio</p>
+                            <button class="btn btn-gold main-screen__btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="main-screen__slide swiper-slide" style="background-image: url(./img/main-bg-4.webp);">
+                        <div class="main-screen__content">
+                            <h3 class="title-3 main-screen__title">International Real Estate</h3>
+                            <p class="main-screen__text">We specialize in providing top-notch real estate options in highly desirable global destinations, guiding you through various investment programs for residency and citizenship.</p>
+                            <button class="btn btn-gold main-screen__btn">Real Estate Enquiry</button>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     <section class="about">
@@ -331,7 +359,7 @@
             </div>
         </section>
     </footer>
-
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
