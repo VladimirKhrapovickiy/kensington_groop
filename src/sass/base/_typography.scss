@@ -1,0 +1,16 @@
+body{
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(20px);
+    color: $color-green;
+}
+
+h2{
+    font-size: rem(64px);
+    display: inline-block;
+    padding: rem(10px) rem(60px);
+    background-color: $color-gray;
+    margin-bottom: rem(60px);
+    font-weight: 400;
+}

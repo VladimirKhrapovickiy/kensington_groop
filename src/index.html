@@ -3,11 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kensington-Groop</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>HELLO TO THE NEW PROJECT 111</h1>
+    <header class="header">
+        <div class="container">
+            <img src="./img/icons/logo.svg" alt="logo" class="logo header__logo">
+            <nav class="header__menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">Citizenship</a></li>
+                    <li class="header__nav-item"><a href="#">Residence</a></li>
+                    <li class="header__nav-item"><a href="#">Real Estate</a></li>
+                    <li class="header__nav-item"><a href="#">Legal Services</a></li>
+                    <li class="header__nav-item"><a href="#">Private Club</a></li>
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-green btn-contact">CONTACT</button>
+        </div>
+    </header>
+    <main>
+        <section class="main-screen">
+            <div class="container">
+                <div class="main-screen__slide" style="background-image: url(./img/main-bg-1.webp);">
+                    <div class="main-screen__content">
+                        <h3 class="title-3 main-screen__title">International Real Estate</h3>
+                        <p class="main-screen__text">We specialize in providing top-notch real estate options in highly desirable global destinations, guiding you through various investment programs for residency and citizenship.</p>
+                        <button class="btn btn-gold main-screen__btn">Real Estate Enquiry</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="title-2 about__title">About US</h2>
+            <div class="about__text">With over 25 years of institutional experience, Henley & Partners is by far the largest globally integrated residence and citizenship advisory firm in the world. Through the provision of bespoke residence and citizenship by investment solutions, we have helped thousands of individuals and families, their advisors, and many sovereign states to generate value. Our outstanding people and systems provide a world-class advisory service underpinned by strict confidentiality, data security, and limited transaction risk.</div>
+            <div class="about__advantages advantages">
+                <ul class="advantages__list">
+                    <li class="advantages__item" style="background-image: url(./img/about-1.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">60 +</span>Offices worldwide</div>
+                    </li>
+                    <li class="advantages__item" style="background-image: url(./img/about-1.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">25 +</span>Years leading the sector</div>
+                    </li>
+                    <li class="advantages__item" style="background-image: url(./img/about-3.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">40 +</span>Investment migration options</div>
+                    </li>
+                    <li class="advantages__item" style="background-image: url(./img/about-4.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">15 +</span>Government advisory mandates</div>
+                    </li>
+                    <li class="advantages__item" style="background-image: url(./img/about-5.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">25 000 +</span>Clients advised</div>
+                    </li>
+                    <li class="advantages__item" style="background-image: url(./img/about-6.png)">
+                        <div class="advantages__text"><span class="advantages__numbers">15 billion+</span>FDI raised</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <div class="section__top">
+                <h2 class="title-2 section__title">Top-Tier Citizenship Programs</h2>
+                <a href="#" class="section__more">VIEW ALL</a>
+            </div>
+            <ul class="programs__list">
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-1.png" alt="" class="card__img">
+                    <div class="card__name">Austria</div>
+                    <div class="card__desc">Austria has one of the world’s strongest passports. Prospective citizens are required to make a substantial contribution to the country’s economy.</div>
+                    <a href="#" class="card__url">Austria citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-2.png" alt="" class="card__img">
+                    <div class="card__name">MALTA</div>
+                    <div class="card__desc">By making a significant direct investment, individuals can acquire citizenship through naturalization in recognition of exceptional services</div>
+                    <a href="#" class="card__url">MALTA citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-3.png" alt="" class="card__img">
+                    <div class="card__name">Grenada</div>
+                    <div class="card__desc">Grenada has the only Caribbean citizenship program that holds an E-2 ligible to apply for a non-immigrant visa.</div>
+                    <a href="#" class="card__url">GRENADA citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-4.png" alt="" class="card__img">
+                    <div class="card__name">Nauru</div>
+                    <div class="card__desc">Successful applicants in Nauru are provided with a secure second citizenship, along with opportunities for development and resilience to climate challenges.</div>
+                    <a href="#" class="card__url">NAURU citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-5.png" alt="" class="card__img">
+                    <div class="card__name">MoNTENEGRO</div>
+                    <div class="card__desc">The Montenegro Citizenship by Investment Program was concluded on 31 December 2022. Contact us to find the best alternative citizenship for you and your family.</div>
+                    <a href="#" class="card__url">MoNTENEGRO citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-6.png" alt="" class="card__img">
+                    <div class="card__name">Israel</div>
+                    <div class="card__desc">Citizenship by Naturalisation for Exceptional Services by Direct Investment. This process offers the world’s strictest due diligence standards and vetting.</div>
+                    <a href="#" class="card__url">Israel citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-7.png" alt="" class="card__img">
+                    <div class="card__name">Turkey</div>
+                    <div class="card__desc">Gain citizenship through the Türkiye Citizenship by Investment Program to unlock opportunities in two continents - Asia and Europe. </div>
+                    <a href="#" class="card__url">Turkey citizenship</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Citizenship-8.png" alt="" class="card__img">
+                    <div class="card__name">Antigua and Barbuda</div>
+                    <div class="card__desc">Starting at just USD 230,000, Antigua and Barbuda's citizenship programs stand out as exceptionally competitive in the Caribbean region.
+                    </div>
+                    <a href="#" class="card__url">Antigua and Barbuda citizenship</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <div class="section__top">
+                <h2 class="title-2 section__title">Top-Residence Programs</h2>
+                <a href="#" class="section__more">VIEW ALL</a>
+            </div>
+            <ul class="programs__list">
+                <li class="programs__item card">
+                    <img src="./img/Residence-1.png" alt="" class="card__img">
+                    <div class="card__name">Spain</div>
+                    <div class="card__desc">The Spain Residence by Investment Program enables individuals to live, work and study in Spain, as well as travel visa-free in Europe's Schengen Area.</div>
+                    <a href="#" class="card__url">Spain Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-2.png" alt="" class="card__img">
+                    <div class="card__name">France</div>
+                    <div class="card__desc">Citizenship by Naturalisation for Exceptional Services by Direct Investment. This process offers the world’s strictest due diligence standards and vetting.</div>
+                    <a href="#" class="card__url">France Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-3.png" alt="" class="card__img">
+                    <div class="card__name">ItalY</div>
+                    <div class="card__desc">Italy has two residence options for investors seeking visa-free travel across Europe’s Schengen Area. No permanent stay is required. Investment is from EUR 250,000.</div>
+                    <a href="#" class="card__url">ItalY Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-4.png" alt="" class="card__img">
+                    <div class="card__name">Switzerland</div>
+                    <div class="card__desc">By making an annual tax contribution of at least CHF 250,000, individuals can secure residence in Switzerland through the Swiss Residence Program.</div>
+                    <a href="#" class="card__url">Switzerland Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-5.png" alt="" class="card__img">
+                    <div class="card__name">MoNTENEGRO</div>
+                    <div class="card__desc">The Montenegro Citizenship by Investment Program was concluded on 31 December 2022. Contact us to find the best alternative citizenship for you and your family.</div>
+                    <a href="#" class="card__url">MoNTENEGRO Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-6.png" alt="" class="card__img">
+                    <div class="card__name">Cosra RICA</div>
+                    <div class="card__desc">For just $150,000, investors in Costa Rica gain entry to dynamic urban centers, political security, and opportunities within the Central American market.</div>
+                    <a href="#" class="card__url">Cosra RICA Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-7.png" alt="" class="card__img">
+                    <div class="card__name">IRELAND</div>
+                    <div class="card__desc">The Türkiye Citizenship by Investment Program provides citizenship of a country with links to both Asia and Europe and access to the markets in both regions.</div>
+                    <a href="#" class="card__url">IRELAND Residence</a>
+                </li>
+                <li class="programs__item card">
+                    <img src="./img/Residence-8.png" alt="" class="card__img">
+                    <div class="card__name">SINGAPORE</div>
+                    <div class="card__desc">Antigua and Barbuda offers one of the most competitive citizenship programs in the Caribbean. Options start from USD 230,000.</div>
+                    <a href="#" class="card__url">SINGAPORE Residence</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="estate">
+        <div class="container">
+            <div class="section__top">
+                <h2 class="title-2 section__title">Real Estate</h2>
+                <a href="#" class="section__more">VIEW ALL</a>
+            </div>
+            <ul class="estate__list">
+                <li class="estate__item">
+                    <img src="./img/Estate-1.png" alt="" class="estate__img">
+                    <div class="estate__location">Caribbean region</div>
+                </li>
+                <li class="estate__item">
+                    <img src="./img/Estate-2.png" alt="" class="estate__img">
+                    <div class="estate__location">France</div>
+                </li>
+                <li class="estate__item">
+                    <img src="./img/Estate-3.png" alt="" class="estate__img">
+                    <div class="estate__location">SPAIN</div>
+                </li>
+                <li class="estate__item">
+                    <img src="./img/Estate-4.png" alt="" class="estate__img">
+                    <div class="estate__location">Italy</div>
+                </li>
+                <li class="estate__item">
+                    <img src="./img/Estate-5.png" alt="" class="estate__img">
+                    <div class="estate__location">US</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="club">
+        <div class="container club__container" style="background-image: url(./img/club-bg.png);">
+            <div class="club__text">Concierge club for club members</div>
+            <a class="btn btn-gold club__btn">LERN MORE</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <img src="./img/services.png" alt="" class="services__img">
+            <ul class="services__list">
+                <li class="services__item">
+                    <span class="services__item-name">We advise on the best program for you and your family</span>
+                    <p class="services__item-text">Once the relevant government agency has reviewed all documentation, it will conduct its own due diligence checks. If your application is successful, the government will send us an approval-in-principle letter, and you will be asked to fulfill any payment obligations (namely, make the investment, and/or pay the contribution, and/or settle any remaining fees). On receipt of the payments, the government will initiate your residence or citizenship documents.</p>
+                    <span class="services__item-plus">+</span>
+                </li>
+                <li class="services__item">
+                    <span class="services__item-name">We onbourd you as you Kensington Group client</span>
+                    <p class="services__item-text">Once the relevant government agency has reviewed all documentation, it will conduct its own due diligence checks. If your application is successful, the government will send us an approval-in-principle letter, and you will be asked to fulfill any payment obligations (namely, make the investment, and/or pay the contribution, and/or settle any remaining fees). On receipt of the payments, the government will initiate your residence or citizenship documents.</p>
+                    <span class="services__item-plus">+</span>
+                </li>
+                <li class="services__item">
+                    <span class="services__item-name">Our team is here to help guide you through every step of the application process.</span>
+                    <p class="services__item-text">Once the relevant government agency has reviewed all documentation, it will conduct its own due diligence checks. If your application is successful, the government will send us an approval-in-principle letter, and you will be asked to fulfill any payment obligations (namely, make the investment, and/or pay the contribution, and/or settle any remaining fees). On receipt of the payments, the government will initiate your residence or citizenship documents.</p>
+                    <span class="services__item-plus">+</span>
+                </li>
+                <li class="services__item">
+                    <span class="services__item-name">New residence or citizenship rights are now bestowed upon you.</span>
+                    <p class="services__item-text">Once the relevant government agency has reviewed all documentation, it will conduct its own due diligence checks. If your application is successful, the government will send us an approval-in-principle letter, and you will be asked to fulfill any payment obligations (namely, make the investment, and/or pay the contribution, and/or settle any remaining fees). On receipt of the payments, the government will initiate your residence or citizenship documents.</p>
+                    <span class="services__item-plus">+</span>
+                </li>
+                <li class="services__item">
+                    <span class="services__item-name">We advise on the best program for you and your family</span>
+                    <p class="services__item-text">Once the relevant government agency has reviewed all documentation, it will conduct its own due diligence checks. If your application is successful, the government will send us an approval-in-principle letter, and you will be asked to fulfill any payment obligations (namely, make the investment, and/or pay the contribution, and/or settle any remaining fees). On receipt of the payments, the government will initiate your residence or citizenship documents.</p>
+                    <span class="services__item-plus">+</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="section__top">
+                <h2 class="title-2 section__title">News and Articles</h2>
+                <a href="#" class="section__more">VIEW ALL</a>
+            </div>
+            <ul class="news__list">
+                <li class="news__card">
+                    <img src="./img/news-1.png" alt="" class="news__card-img">
+                    <span class="news__card-date">10 February 2025</span>
+                    <span class="news__card-title">The World’s Most (and Least) Powerful Passports in 2025</span>
+                </li>
+                <li class="news__card">
+                    <img src="./img/news-2.png" alt="" class="news__card-img">
+                    <span class="news__card-date">10 February 2025</span>
+                    <span class="news__card-title">The World’s Most (and Least) Powerful Passports in 2025</span>
+                </li>
+                <li class="news__card">
+                    <img src="./img/news-3.png" alt="" class="news__card-img">
+                    <span class="news__card-date">10 February 2025</span>
+                    <span class="news__card-title">The World’s Most (and Least) Powerful Passports in 2025</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+    <footer>
+        <section class="social">
+            <h2 class="title-2 social__title">Follow us</h2>
+            <div class="social__links">
+                <a href="" class="social__link"><img src="./img/icons/YouTube, Negative.svg" alt="youtube icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Facebook, Negative.svg" alt="facebooc icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/X, Negative.svg" alt="x icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Instagram, Negative.svg" alt=" instagram icon" class="social__icon"></a>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <span class="feedback__text">Should you have any questions, or if you would like a detailed breakdown of the exact costs for your family, kindly contact us and we will be delighted to help you.</span>
+                <form action="" class="feedback__form">
+                    <input type="text" class="feedback__input" placeholder="First name">
+                    <input type="text" class="feedback__input" placeholder="Last name">
+                    <input type="text" class="feedback__input" placeholder="Email address">
+                    <input type="text" class="feedback__input" placeholder="Phone">
+                    <button class="btn btn-gold feedback__btn">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <div class="container">
+                <img src="./img/icons/logo.svg" alt="logo" class="logo footer-bottom__logo">
+                <nav class="footer-bottom__menu">
+                    <ul class="footer-bottom__menu-list">
+                        <li class="footer-bottom__menu-item"><a href="#">Citizenship</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Residence</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Real Estate</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Legal Services</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Private Club</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-bottom__contacts">
+                    <span>The Lifestyle Group</span>
+                    <span>+1 (305) 988-7787</span>
+                    <span>+1 (305) 988-7787</span>
+                    <span>6365 Collins Ave Miami Beach, FL 33141</span>
+                </div>
+                <button class="btn btn-green btn-contact">CONTACT</button>
+            </div>
+        </section>
+    </footer>
+
 <script src="js/main.min.js"></script>
 </body>
 </html>

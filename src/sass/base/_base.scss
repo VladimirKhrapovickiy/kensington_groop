@@ -4,18 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html{
-    @include respond(big-screen){
-        font-size: 110%;
-    }
-    @include respond(tab-lend){
-        font-size: 90%;
-    }
-    @include respond(tab-port){
-        font-size: 80%;
-    }
-    @include respond(phone){
-        font-size: 70%;
+.container{
+    max-width: rem(1760px);
+    margin: 0 auto;
+}
+section{
+    margin-bottom: rem(100px);
+    .section__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: rem(60px);
+        h2{
+            margin: 0;
+        }
     }
 }

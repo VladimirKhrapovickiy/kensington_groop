@@ -1,0 +1,47 @@
+.btn{
+    padding: rem(15px) rem(36px);
+    display: flex;
+    gap: rem(16px);
+    font-family:"Montserrat";
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    width: fit-content;
+}
+.btn-green{
+    background-color: $color-green;
+    color: $color-white;
+    border: 1px solid $color-green;
+}
+.btn-green:hover, .btn-green:active{
+    border: 1px solid $color-green;
+    background: transparent;
+    color: $color-green;
+}
+.btn-gold{
+    background: transparent; 
+    background-color: transparent;
+    color: $color-white;
+    border: 1px solid $color-accent;
+    border-image: $gradient-gold;
+    border-image-slice: 1;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.btn-gold:hover, .btn-gold:active {
+    background: $gradient-gold;
+    color: $color-green;
+}
+
+.btn-contact::before{
+content: "";
+width: 22px;
+height: 16px;
+background-image: url("../../img/icons/mail.svg");
+background-size: contain;
+background-repeat: no-repeat;
+transition: 0.3s all ease-in;
+}
+.btn-contact:hover::before{
+    background-image: url("../../img/icons/mail-green.svg");
+}
