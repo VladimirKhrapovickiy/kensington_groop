@@ -28,8 +28,10 @@ $(document).ready(function() {
             $(this).on("click", function(){
                 $questions.each(function(){
                     $(this).find(".services__item-text").hide("fast");
+                    $(this).find(".services__item-plus").text("+");
                 })
                 $(this).find(".services__item-text").toggle("fast");
+                $(this).find(".services__item-plus").text("-");
             })
         })
       }
