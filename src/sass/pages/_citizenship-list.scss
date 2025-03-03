@@ -1,0 +1,91 @@
+.main-screen-secondary{
+    margin-bottom: rem(60px);
+    .container{
+        padding: rem(120px) rem(130px) rem(160px) rem(160px);
+    }
+    .main-screen__title{
+        color: $color-white;
+        font-weight: 400;
+        font-size: rem(96px);
+        line-height: rem(130px);
+        margin-bottom: 1rem;
+    }
+    .main-screen__content{
+        position: relative;
+        bottom: initial;
+        right: initial;
+        padding: rem(36px) rem(38px) rem(48px) rem(60px);
+        background-color: rgba($color-green,.9);
+    }
+    .main-screen__text{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: rem(24px);
+    }
+}
+
+.breadcrumbs{
+    .container{
+        display: flex;
+        gap: rem(5px);
+    }
+    &__home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(5px);
+    }
+    &__home-ico{
+        width: rem(12px);
+        height: rem(12px);
+    }
+    &__pagename{
+        color: rgba(40, 39, 57, 0.6);
+    }
+    &__pagename__active{
+        color: rgba(40, 39, 57, 1);
+    }
+}
+@media(max-width: 560px){
+    .main-screen-secondary{
+        .container{
+            padding: 0;
+            position: relative;
+        }
+        .main-screen__h1-container{
+            max-width: 240px;
+            position: absolute;
+            background-color: $color-green;
+            padding: 12px;
+            bottom: rem(48px);
+            right: rem(20px);
+        }
+        .main-screen__title{
+            font-size: rem(20px);
+            background-image: $gradient-gold;
+            color: transparent;
+            background-clip: text; 
+            text-transform: uppercase;
+            line-height: rem(27px);
+        }
+        .main-screen__content{
+            display: none;
+        }
+    }
+    .secondary-programs{
+        .programs__list{
+            flex-direction: column;
+            overflow-x: hidden;
+            gap: rem(32px);
+        }
+        .card{
+            width: 100%;
+            &__desc{
+                margin-bottom: rem(12px);
+            }
+            &__url{
+                font-size: rem(20px);
+            }
+        }
+    }
+}

@@ -20,3 +20,14 @@ section{
         }
     }
 }
+@media (max-width: 580px) {
+    section{
+        margin-bottom: rem(60px);
+    }
+    .section__top{
+        margin-bottom: rem(32px);
+    }
+    .section__more{
+        display: none;
+    }
+}

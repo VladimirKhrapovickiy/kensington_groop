@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kensington-Groop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="./img/icons/logo.svg" alt="logo" class="logo header__logo">
+            <nav class="header__menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">Citizenship</a></li>
+                    <li class="header__nav-item"><a href="#">Residence</a></li>
+                    <li class="header__nav-item"><a href="#">Real Estate</a></li>
+                    <li class="header__nav-item"><a href="#">Legal Services</a></li>
+                    <li class="header__nav-item"><a href="#">Private Club</a></li>
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-green btn-contact">CONTACT</button>
+            <img src="./img/icons/burger.svg" alt="" class="header__burger">
+        </div>
+        <div class="header__mobile-menu">
+            <ul class="header__mobile-menu-list">
+                <li class="header__mobile-menu-item">Citizenship</li>
+                <li class="header__mobile-menu-item">Residence</li>
+                <li class="header__mobile-menu-item">Real Estate</li>
+                <li class="header__mobile-menu-item">Legal Services</li>
+                <li class="header__mobile-menu-item">Private Club</li>
+                <li class="header__mobile-menu-item">About</li>
+            </ul>
+            <div class="header__mobile-menu-social social__links">
+                <a href="" class="social__link"><img src="./img/icons/YouTube, Negative.svg" alt="youtube icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Facebook, Negative.svg" alt="facebooc icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/X, Negative.svg" alt="x icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Instagram, Negative.svg" alt=" instagram icon" class="social__icon"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-screen main-screen-secondary main-screen-estate">
+            <div class="container"  style="background-image: url(./img/spain.png);">
+                <div class="main-screen__h1-container">
+                    <h1 class="main-screen__title">SPAIN</h1>
+                </div>
+                <div class="main-screen__content">
+                    <h2 class="main-screen__title">SPAIN</h2>
+                    <p class="main-screen__text">One of the most popular holiday destinations in the world, Spain is located in Southwestern Europe. With its majestic landscapes and high quality of life, this vibrant country is admired by many. Known for its rich history, unique culture, and traditions, Spain is also home to one of Europe's most significant economies. As a full member of the Eurozone and the EU, Spain holds a prominent position in the global economic landscape.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__home"><img src="./img/icons/Vector.svg" alt="" class="breadcrumbs__home-ico">Home</div>
+                <span>/</span>
+                <div class="breadcrumbs__pagename">Real Estate</div>
+                <span>/</span>
+                <div class="breadcrumbs__pagename breadcrumbs__pagename__active">Spain</div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="info__nav">
+                    <div class="info__nav-item info__nav-item-active">About Spain</div>
+                    <div class="info__nav-item">Residence by Investment</div>
+                    <div class="info__nav-item">Real Estate</div>
+                </div>
+                <div class="info__content info__content-1">
+                    <div class="info__facts">
+                        <div class="info__fact">
+                            <img src="./img/icons/info_fact-7.svg" alt="" class="info__fact-ico">
+                            <span class="info__fact-name">Holding period of real estate</span>
+                            <span class="info__fact-value">Necessary to maintain and renew the residence permit</span>
+                        </div>
+                        <div class="info__fact">
+                            <img src="./img/icons/info_fact-8.svg" alt="" class="info__fact-ico">
+                            <span class="info__fact-name">Type of ownership</span>
+                             <span class="info__fact-value">Full ownership</span>
+                        </div>
+                        <div class="info__fact">
+                            <img src="./img/icons/info_fact-3.svg" alt="" class="info__fact-ico">
+                            <span class="info__fact-name">Minimum real estate investment</span>
+                             <span class="info__fact-value">EUR 500,000</span>
+                        </div>
+                        <div class="info__fact">
+                            <img src="./img/icons/info_fact-4.svg" alt="" class="info__fact-ico">
+                            <span class="info__fact-name">Rental income opportunitytate</span>
+                             <span class="info__fact-value">3-5% on residential property</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="estate-catalog">
+            <div class="container">
+                <div class="estate-catalog__filters">
+                    <div class="filter">
+                        <div class="filter__name">Country </div>
+                        <select class="filter__select" name="country">
+                            <option value="value1" selected>Any</option>
+                            <option value="value1">Spain</option>
+                            <option value="value2">France</option>
+                            <option value="value3">Italy</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <div class="filter__name">City</div>
+                        <select class="filter__select" name="city">
+                            <option value="value1" selected>Any</option>
+                            <option value="value1">Madrid</option>
+                            <option value="value2">Phuket</option>
+                            <option value="value3">Esterona</option>
+                            <option value="value3">Casasola</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <div class="filter__name">Property Type</div>
+                        <select class="filter__select" name="property-type">
+                            <option value="value1" selected>All prope</option>
+                            <option value="value1">Type 1</option>
+                            <option value="value2">Type 2</option>
+                            <option value="value3">Type 3</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <div class="filter__name">Bedrooms</div>
+                        <select class="filter__select" name="bedrooms">
+                            <option value="value1" selected>Any</option>
+                            <option value="value1">1</option>
+                            <option value="value2">2</option>
+                            <option value="value3">3</option>
+                            <option value="value3">4</option>
+                            <option value="value3">5</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <div class="filter__name">Price</div>
+                        <select class="filter__select" name="bedrooms">
+                            <option value="value1" selected>Any</option>
+                            <option value="value1">10 000</option>
+                            <option value="value2">20 000</option>
+                            <option value="value3">30 000</option>
+                            <option value="value3">40 000</option>
+                            <option value="value3">50 000</option>
+                        </select>
+                    </div>
+                    <div class="filter filter__select-currency">
+                        <div class="filter__select">
+                            <img class="filter__currency-ico" src="./img/icons/european-union.svg" alt="">
+                            <span>EUR</span>
+                        </div>
+                    </div>
+                    
+                    <div class="btn btn-green filter__search">SEARCH</div>
+                </div>
+                <div class="estate-catalog__list">
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics estate-card__characteristics-white">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics estate-card__characteristics-white">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate-card">
+                        <img src="./img/estate-card.png" alt="" class="estate-card__img">
+                        <div class="estate-card__top">
+                            <span class="estate-card__name">Villa house in El Campanario</span>
+                            <span class="estate-card__price">EUR 500,000</span>
+                        </div>
+                        <div class="estate-card__characteristics estate-card__characteristics-white">
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-1.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Country, City</span>
+                                <span class="estate-card__characteristic-value">Estepona, Spain</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-2.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Property Type</span>
+                                <span class="estate-card__characteristic-value">Villa</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-3.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Bedrooms</span>
+                                <span class="estate-card__characteristic-value">4</span>
+                            </div>
+                            <div class="estate-card__characteristic">
+                                <img src="./img/icons/estate-char-green-4.svg" alt="" class="estate-card__characteristic-icon">
+                                <span class="estate-card__characteristic-name">Total area</span>
+                                <span class="estate-card__characteristic-value">775 m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <button class="btn btn-gold estate-catalog__more">LEARN MORE</button>               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="social">
+            <h2 class="title-2 social__title">Follow us</h2>
+            <div class="social__links">
+                <a href="" class="social__link"><img src="./img/icons/YouTube, Negative.svg" alt="youtube icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Facebook, Negative.svg" alt="facebooc icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/X, Negative.svg" alt="x icon" class="social__icon"></a>
+                <a href="" class="social__link"><img src="./img/icons/Instagram, Negative.svg" alt=" instagram icon" class="social__icon"></a>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <span class="feedback__text">Should you have any questions, or if you would like a detailed breakdown of the exact costs for your family, kindly contact us and we will be delighted to help you.</span>
+                <form action="" class="feedback__form">
+                    <input type="text" class="feedback__input" placeholder="First name">
+                    <input type="text" class="feedback__input" placeholder="Last name">
+                    <input type="text" class="feedback__input" placeholder="Email address">
+                    <input type="text" class="feedback__input" placeholder="Phone">
+                    <button class="btn btn-gold feedback__btn">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <div class="container">
+                <img src="./img/icons/logo.svg" alt="logo" class="logo footer-bottom__logo">
+                <nav class="footer-bottom__menu">
+                    <ul class="footer-bottom__menu-list">
+                        <li class="footer-bottom__menu-item"><a href="#">Citizenship</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Residence</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Real Estate</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Legal Services</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">Private Club</a></li>
+                        <li class="footer-bottom__menu-item"><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-bottom__contacts">
+                    <span>The Lifestyle Group</span>
+                    <span>+1 (305) 988-7787</span>
+                    <span>+1 (305) 988-7787</span>
+                    <span>6365 Collins Ave Miami Beach, FL 33141</span>
+                </div>
+                <button class="btn btn-green btn-contact">CONTACT</button>
+            </div>
+        </section>
+    </footer>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

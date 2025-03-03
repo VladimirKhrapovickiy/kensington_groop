@@ -14,3 +14,13 @@ h2{
     margin-bottom: rem(60px);
     font-weight: 400;
 }
+
+@media (max-width: 580px) {
+    body{
+        font-size: rem(14px);
+    }
+    h2{
+        font-size: rem(24px);
+        padding: rem(7px) rem(34px) rem(12px) 1rem;
+    }
+}

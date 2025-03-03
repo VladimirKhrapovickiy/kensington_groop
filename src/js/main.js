@@ -35,4 +35,38 @@ $(document).ready(function() {
             })
         })
       }
+
+      //nav-bar country page
+      const $navItems = $(".info__nav-item");
+      if($navItems.length > 0){
+        $navItems.each(function(index){
+          $(this).on("click", function(){
+            if(!$(this).hasClass(".info__nav-item-active")){
+              $navItems.each(function(){$(this).removeClass("info__nav-item-active")});
+              $(this).addClass("info__nav-item-active")
+              $(".info__content").each(function(){$(this).hide()})
+              $(`.info__content-${index+1}`).fadeIn();
+            }
+          })
+        })
+      }
+
+      //mobile-header
+      const $burgerBtn = $(".header__burger");
+      if($burgerBtn.length > 0){
+        $burgerBtn.on("click", function(){
+          const $mobileMenu = $(".header__mobile-menu");
+          $mobileMenu.slideToggle(400)
+        })
+      }
+
+      //estate gallary
+      const $gallaryItems = $(".gallary__item");
+      if($gallaryItems.length > 0){
+        $gallaryItems.each(function(){
+          $(this).on("click", function(){
+            $(".gallary__main").attr("src", $(this).attr("src"))
+          })
+        })
+      }
 })

@@ -1,0 +1,31 @@
+.main-screen-estate{
+    .main-screen__content{
+        .main-screen__title{
+            background-image: linear-gradient(150deg, #dfbd69, #fef7c0, #926f34);
+            color: rgba(0, 0, 0, 0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: rem(32px);
+            padding: 0;
+        }
+    }
+}
+.info__fact-name{
+    text-align: center;
+}
+@media (max-width: 580px) {
+    .main-screen-estate{
+        .container{
+            background-position: center;
+            background-size: cover;
+        }
+        .main-screen__h1-container{
+            .main-screen__title{
+                margin: 0;
+            }
+        }
+    }
+}

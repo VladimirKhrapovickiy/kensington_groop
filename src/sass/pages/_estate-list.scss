@@ -1,0 +1,201 @@
+.text-info{
+    margin-bottom: rem(60px);
+}
+.estate-catalog{
+    &__filters{
+        background-color: $color-gray;
+        display: flex;
+        justify-content: space-between;
+        padding: rem(15px) rem(10px) rem(40px);
+        align-items: flex-end;
+        gap: rem(20px);
+        margin-bottom: rem(60px);
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: rem(20px);
+        grid-column-gap: rem(20px);
+        margin-bottom: rem(60px);
+    }
+    &__more{
+        color: $color-green;
+        grid-column: 1 / 3;
+        justify-self: center;
+        padding: 1rem rem(70px);  
+    }
+}
+
+.filter{
+    width: 100%;
+    padding: 0 2px;
+    &__name{
+        font-family: "Montserrat";
+        font-size: 1rem;
+        margin-bottom: rem(10px);
+    }
+    &__select{
+        width: 100%;
+        padding: rem(10px) rem(20px);
+        background-color: transparent;
+        border: 1px solid rgba(196, 194, 194, 1);
+        font-size: 1rem;
+    }
+}
+.filter__select-currency{
+        width: 100%;
+        max-width: rem(120px);
+        cursor: pointer;
+        .filter__select{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: rem(6px);
+        }
+}
+.estate-card{
+    position: relative;
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        height: rem(420px);
+    }
+    &__top{
+        position: absolute;
+        top: rem(40px);
+        left: rem(20px);
+        padding: rem(15px) rem(45px);
+        background-color: rgba($color-white, 0.7);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(12px);
+    }
+    &__name{
+        font-size: rem(24px);
+        text-transform: uppercase;
+    }
+    &__price{
+        font-size: rem(20px);
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    &__characteristics{
+        display: flex;
+        background-color: $color-green;
+        justify-content: space-between;
+        padding: rem(45px) rem(92px);
+    }
+    &__characteristic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__characteristic-name, &__characteristic-value{
+        color: $color-white;
+        font-size: rem(20px);
+    }
+    &__characteristic-icon{
+        margin-bottom: rem(12px);
+    }
+    &__characteristics-white{
+        background-color: transparent;
+        border: 1px solid $color-accent;
+        border-image: $gradient-gold;
+        border-image-slice: 1;
+        .estate-card__characteristic-name, .estate-card__characteristic-value{
+            color: $color-green;
+        }
+    }
+}
+@media (max-width: 580px){
+    .main-screen-residence{
+        margin-bottom: 2rem;
+        .container{
+            background-position: center;
+        }
+        .main-screen__title{
+            margin: 0;
+        }
+        .main-screen__h1-container{
+            padding: rem(14px) rem(30px);
+        }
+    }
+    .secondary-estate{
+        .estate__list{
+            overflow-x: hidden;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .estate__item, .estate__img{
+            width: 100%;
+        }
+        .estate__location{
+            font-size: rem(20px);
+        }
+    }
+    .estate-catalog__filters{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .filter__select-currency{
+        grid-row: 1/2;
+        justify-self: end;
+    }
+    .filter__search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: rem(8px);
+    }
+    .estate-catalog__list{
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+    .estate-card__characteristics{
+        flex-direction: column;
+        padding: rem(15px) rem(20px);
+        gap: 12px;
+    }
+    .estate-card__characteristic{
+        display: grid;
+        grid-template-columns: rem(35px) 1fr;
+        column-gap: rem(25px);
+        row-gap: rem(2px);
+
+    }
+    .estate-card__top{
+        top: rem(17px);
+        left: rem(7px);
+        padding: rem(12px) rem(7px);
+    }
+    .estate-card__img{
+        height: rem(216px);
+    }
+    .estate-card__name{
+        font-size: rem(14px);
+    }
+    .estate-card__price{
+        font-size: rem(14px);
+    }
+    .estate-card__characteristic-icon{
+        grid-row: 1/3;
+        width: 100%;
+    }
+    .estate-card__characteristic-name{
+        font-size: rem(12px);
+        color: rgba($color-white, 0.7);
+    }
+    .estate-card__characteristic-value{
+        grid-column: 2/3;
+        font-size: rem(14px);
+    }
+    .estate-catalog__more{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: rem(8px);
+    }
+
+}

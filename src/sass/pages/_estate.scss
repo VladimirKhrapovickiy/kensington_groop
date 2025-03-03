@@ -1,0 +1,107 @@
+.estate-info{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: rem(20px);
+    }
+    .estate-card__characteristics{
+        margin-bottom: rem(50px);
+    }
+    .estate-info__description:nth-child(2){
+        margin-bottom: rem(10px);
+    }
+    .estate-info__description:nth-child(3){
+        margin-bottom: rem(28px);
+    }
+    .estate-info__call{
+        display: inline-block;
+        font-size: rem(24px);
+        margin-bottom:rem(46px) ;
+    }
+    .estate-catalog__more{
+        justify-self: start;
+    }
+    
+}
+.similar-estate{
+    &__title{
+        background-color: transparent;
+        padding-left: 0px;
+    }
+    .estate-catalog__more{
+        display: none;
+    }
+    .card-mobile{
+        display: none;
+    }
+}
+.gallary{
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
+    &__main{
+        width: 100%;
+        height: rem(420px);
+        object-fit: cover;
+    }
+    &__main-mobile{
+        display: none;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 18%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 580px){
+    .estate-info{
+        margin-bottom: rem(60px);
+        .container{
+            grid-template-columns: 1fr;
+        }
+        .estate-card__characteristics{
+            margin-bottom: 2rem;
+        }
+        .estate-info__call{
+            display: none;
+        }
+        .estate-catalog__more{
+            display: none;
+        }
+    }
+    .similar-estate{
+        &__title{
+            margin-bottom: 2rem;
+        }
+        .estate-catalog__more{
+            display: block;
+        }
+        .card-mobile{
+            display: block;
+        }
+    }
+    .gallary{
+        &__main-mobile{
+            display: block;
+        }
+        &__main{
+            display: none;
+        }
+        &__list{
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: 155px 155px 155px;
+            grid-row-gap: rem(10px);
+            grid-column-gap: rem(10px);
+            img{
+                max-width: 100%;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
