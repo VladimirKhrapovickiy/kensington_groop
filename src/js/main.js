@@ -1,20 +1,12 @@
 $(document).ready(function() {
     const swiper = new Swiper('.swiper', {
-        // Optional parameters
         loop: true,
-      
-        // If we need pagination
         pagination: {
           el: '.swiper-pagination',
         },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+        autoplay: {
+          delay: 5000,
         },
-      
-        // And if we need scrollbar
         scrollbar: {
           el: '.swiper-scrollbar',
         },
@@ -26,12 +18,23 @@ $(document).ready(function() {
       if($questions.length > 0){
         $questions.each(function(){
             $(this).on("click", function(){
+              if(!$(this).hasClass(".services__item-active")){
+                $currenItem = $(this);
                 $questions.each(function(){
-                    $(this).find(".services__item-text").hide("fast");
-                    $(this).find(".services__item-plus").text("+");
+                  if($(this)[0] !==  $currenItem[0]){
+                    $(this).removeClass("services__item-active")
+                    $(this).find(".services__item-plus").text("+")
+                  }
                 })
-                $(this).find(".services__item-text").toggle("fast");
-                $(this).find(".services__item-plus").text("-");
+              }
+              $plus = $(this).find(".services__item-plus")
+              $(this).toggleClass("services__item-active");
+              if($plus.text() == "-"){
+                $plus.text("+")
+              }else{
+                $plus.text("-")
+              }
+
             })
         })
       }

@@ -1,4 +1,5 @@
 .header{
+    padding-top: rem(15px);
     padding-bottom: rem(15px);
     .container{
         display: flex;
@@ -27,6 +28,7 @@
         cursor: pointer;
         display: none;
     }
+
     &__mobile-menu{
         display: none;
     }
@@ -129,6 +131,9 @@
         gap: rem(20px);
         justify-content: start;
     }
+    &__item{
+        margin-bottom: rem(30px);
+    }
 }
 .card{
     max-width: rem(425px);
@@ -178,6 +183,9 @@
         text-transform: uppercase;
     }
 }
+.section__more{
+    font-family: "Montserrat";
+}
 .club{
     &__container{
         position: relative;
@@ -210,21 +218,32 @@
         background-color: $color-gray;
     }
     &__item-text{
-        display: none;
-        margin-top: rem(15px);
+        overflow: hidden;
+        display: inline-block;
+        max-height: 0px;
+        transition: all 0.3s ease-out;
     }
     &__img{
         width: 100%;
+        max-height: rem(720px);
     }
     &__list{
         padding: rem(80px) rem(100px) 0 rem(120px);
+        max-height: rem(720px);
+        overflow: hidden;
     }
     &__item{
         border-bottom: 1px solid $color-accent;
-        padding-bottom: rem(25px);
         margin-bottom: rem(25px);
         position: relative;
         cursor: pointer;
+    }
+    &__item-active{
+        padding-bottom: rem(25px);
+        .services__item-text{
+            max-height: 500px;
+            margin-top: rem(15px);
+        }
     }
     &__item-plus{
         font-size: 55px;
@@ -460,6 +479,9 @@
             overflow-x: scroll;
             gap: rem(10px);
         }
+        &__item{
+            margin-bottom: 0px;
+        }
         .card{
             width: rem(252px);
             flex-shrink: 0;
@@ -520,6 +542,7 @@
         }
         &__list{
             padding: rem(32px) rem(10px);
+            max-height: initial;
         }
         &__item{
             padding-bottom: rem(12px);
