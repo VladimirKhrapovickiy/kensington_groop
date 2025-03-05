@@ -23,6 +23,7 @@
         justify-content: center;
         overflow: hidden;
         border: 1px solid $color-accent;
+        padding: rem(20px);
         img{
             object-fit: contain;
         }
